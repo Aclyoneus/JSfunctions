@@ -8,7 +8,7 @@ const greeting = getGreeting('John', 'Smith');
 console.log(greeting);
 
 // 2
-const realName = "Wojciech"
+const realName = 'Wojciech';
 
 function isThisMyName (name) {
     if (name === realName ) {
@@ -18,15 +18,28 @@ function isThisMyName (name) {
     }
 }
 
-console.log(isThisMyName("Adam"));
-console.log(isThisMyName("Wojciech"));
+console.log(isThisMyName('Adam'));
+console.log(isThisMyName('Wojciech'));
 
 // 3
 
 function isThisBoolean (value) {
-    return typeof value === "boolean";
+    return typeof value === 'boolean';
 }
 
 console.log(isThisBoolean(1));
 console.log(isThisBoolean(true));
 
+// 4
+
+const quarterOf = (month) => {
+    if (month <= 3) {
+        return 1;
+    } else if (month <= 6) {
+        return 2;
+    } else if (month <= 9) {
+        return 3;
+    } else {
+        return 4;
+    }
+}
