@@ -64,3 +64,13 @@ function getCirclesAreaSum(radiusOne, radiusTwo) {
 
 const circlesAreaSum = getCirclesAreaSum(5, 10);
 console.log(circlesAreaSum);
+
+// 7
+
+function convertMinutesToHours (minutesAmount) {
+    const minutesToHours = minutesAmount / 60;
+    return minutesToHours;
+}
+
+const hours = convertMinutesToHours(75);
+console.log(hours);
