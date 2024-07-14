@@ -111,3 +111,12 @@ function getBillboardPrice (billboardText, singleCharacterCost) {
 console.log(getBillboardPrice('Hello world!', 10));
 console.log(getBillboardPrice('Hello world!', 15));
 console.log(getBillboardPrice('To be, or not to be', 20));
+
+// 11
+
+function getOppositeNumber(number) {
+    const oppositeNumber = number * -1;
+    return oppositeNumber;
+}
+
+console.log(getOppositeNumber(1));
