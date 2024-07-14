@@ -43,3 +43,14 @@ const quarterOf = (month) => {
         return 4;
     }
 }
+
+// 5 - Dawne pierwsze 4
+
+function getCircleArea (radius) {
+    circleArea = Math.PI * (radius * radius);
+    return circleArea;
+}
+
+const radius = 5;
+const area = getCircleArea(radius);
+console.log(area);
