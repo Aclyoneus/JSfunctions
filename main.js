@@ -120,3 +120,17 @@ function getOppositeNumber(number) {
 }
 
 console.log(getOppositeNumber(1));
+
+// 12
+
+function getNegativeNumber(num) {
+    if (num <= 0) {
+        return num;
+    } else {
+        return num * -1;
+    }
+}
+
+console.log(getNegativeNumber(5));
+console.log(getNegativeNumber(0));
+console.log(getNegativeNumber(-3));
