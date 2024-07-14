@@ -6,3 +6,17 @@ function getGreeting(firstName, lastName) {
 
 const greeting = getGreeting('John', 'Smith');
 console.log(greeting);
+
+// 2
+const realName = "Wojciech"
+
+function isThisMyName (name) {
+    if (name === realName ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+isThisMyName("Adam");
+
