@@ -134,3 +134,12 @@ function getNegativeNumber(num) {
 console.log(getNegativeNumber(5));
 console.log(getNegativeNumber(0));
 console.log(getNegativeNumber(-3));
+
+// 13
+
+function removeFirstAndLastCharacter(str){
+    const removeFirstandLastChar = str.slice(1, -1);
+    return removeFirstandLastChar;
+}
+
+console.log(removeFirstAndLastCharacter("Amazing"));
