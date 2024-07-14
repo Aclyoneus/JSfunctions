@@ -18,5 +18,15 @@ function isThisMyName (name) {
     }
 }
 
-isThisMyName("Adam");
+console.log(isThisMyName("Adam"));
+console.log(isThisMyName("Wojciech"));
+
+// 3
+
+function isThisBoolean (value) {
+    return typeof value === "boolean";
+}
+
+console.log(isThisBoolean(1));
+console.log(isThisBoolean(true));
 
