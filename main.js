@@ -74,3 +74,16 @@ function convertMinutesToHours (minutesAmount) {
 
 const hours = convertMinutesToHours(75);
 console.log(hours);
+
+// 8
+
+function isTextUppercase(text) {
+    if (text === text.toUpperCase()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isTextUppercase('Hello'));
+console.log(isTextUppercase('HELLO'));
