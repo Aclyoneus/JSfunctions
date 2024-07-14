@@ -100,3 +100,14 @@ function isDivisible(n, x, y) {
 
 console.log(isDivisible(5, 1, 5));
 console.log(isDivisible(5, 1, 3));
+
+// 10
+
+function getBillboardPrice (billboardText, singleCharacterCost) {
+    const billboardPrice = billboardText.length * singleCharacterCost;
+    return billboardPrice;
+}
+
+console.log(getBillboardPrice('Hello world!', 10));
+console.log(getBillboardPrice('Hello world!', 15));
+console.log(getBillboardPrice('To be, or not to be', 20));
