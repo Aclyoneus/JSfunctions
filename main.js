@@ -47,10 +47,20 @@ const quarterOf = (month) => {
 // 5 - Dawne pierwsze 4
 
 function getCircleArea (radius) {
-    circleArea = Math.PI * (radius * radius);
+    const circleArea = Math.PI * (radius * radius);
     return circleArea;
 }
 
 const radius = 5;
 const area = getCircleArea(radius);
 console.log(area);
+
+// 6
+
+function getCirclesAreaSum(radiusOne, radiusTwo) {
+    const circlesAreaSum = getCircleArea(radiusOne) + getCircleArea(radiusTwo);
+    return circlesAreaSum;
+}
+
+const circlesAreaSum = getCirclesAreaSum(5, 10);
+console.log(circlesAreaSum);
