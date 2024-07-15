@@ -269,3 +269,14 @@ function isEvenNumber (number) {
 function isDivisible (dividedNumber, numberToDivideBy) {
     return dividedNumber % numberToDivideBy === 0 ? true : false;
 }
+
+// 26
+
+function getSmallerNumber (firstNumber, secondNumber) {
+    if (firstNumber > secondNumber) {
+        return secondNumber;
+    } else if (firstNumber < secondNumber) {
+        return firstNumber;
+    }
+    return "Equal numbers";
+}
