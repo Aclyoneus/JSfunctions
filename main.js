@@ -240,3 +240,14 @@ console.log(getCalculationResult("&", 5, 10));
 function getPercentageValue (baseNumber, percentage) {
     return (baseNumber * percentage) / 100;
 }
+
+// 22
+
+function getGreaterNumber (firstNumber, secondNumber) {
+    if (firstNumber > secondNumber) {
+        return firstNumber;
+    } else if (firstNumber < secondNumber) {
+        return secondNumber;
+    }
+    return "Equal numbers";
+}
