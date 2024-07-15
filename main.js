@@ -34,14 +34,15 @@ console.log(isThisBoolean(true));
 // 4
 
 const quarterOf = (month) => {
-    if (month <= 3) {
-        return 1;
-    } else if (month <= 6) {
-        return 2;
-    } else if (month <= 9) {
-        return 3;
-    } else {
-        return 4;
+    switch (true) {
+        case (month <= 3):
+            return 1;
+        case (month <= 6):
+            return 2;
+        case (month <= 9):
+            return 3;
+        default:
+            return 4;
     }
 }
 
@@ -78,9 +79,8 @@ console.log(hours);
 function isTextUppercase(text) {
     if (text === text.toUpperCase()) {
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 console.log(isTextUppercase('Hello'));
@@ -91,9 +91,8 @@ console.log(isTextUppercase('HELLO'));
 function isDivisible(n, x, y) {
     if (n % x === 0 && n % y === 0) {
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 console.log(isDivisible(5, 1, 5));
@@ -122,9 +121,8 @@ console.log(getOppositeNumber(1));
 function getNegativeNumber(num) {
     if (num <= 0) {
         return num;
-    } else {
-        return num * -1;
     }
+    return num * -1;
 }
 
 console.log(getNegativeNumber(5));
@@ -148,9 +146,8 @@ function getBasicOperationsResult(operation, value1, value2){
         return value1 - value2;
     } else if (operation === '*') {
         return value1 * value2;
-    } else if (operation === '/') {
-        return value1 / value2;
     }
+    return value1 / value2;
 }
 
 console.log(getBasicOperationsResult("+", 5, 10));
