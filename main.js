@@ -162,3 +162,14 @@ function whichCentury(year) {
 }
 
 console.log(whichCentury(301));
+
+// 16
+
+function isEvenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+    }
+    return "Odd";
+}
+
+// 17
