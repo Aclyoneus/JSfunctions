@@ -255,7 +255,11 @@ function getGreaterNumber (firstNumber, secondNumber) {
 // 23
 
 function isOddNumber (number) {
-    return number % 2 === 0 ? true : false;
+    return number % 2 !== 0 ? true : false;
 }
 
 // 24
+
+function isEvenNumber (number) {
+    return number % 2 === 0 ? true : false;
+}
