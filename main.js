@@ -300,3 +300,7 @@ function getFahrenheitConvertedToCelcius (number) {
 }
 
 // 30
+
+function isLeapYear (number) {
+    return number % 4 === 0 ? true : false;
+}
