@@ -292,3 +292,11 @@ function isNumberPositive (number) {
 function getCelciusConvertedToFahrenheit (number) {
     return (number * 1.8) + 32;
 }
+
+// 29
+
+function getFahrenheitConvertedToCelcius (number) {
+    return (number - 32) / 1,8;
+}
+
+// 30
