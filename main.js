@@ -234,3 +234,9 @@ function getCalculationResult(calculationType, firstNumber, secondNumber) {
 }
 
 console.log(getCalculationResult("&", 5, 10));
+
+// 21
+
+function getPercentageValue (baseNumber, percentage) {
+    return (baseNumber * percentage) / 100;
+}
