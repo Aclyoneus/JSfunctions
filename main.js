@@ -180,3 +180,22 @@ function areYouPlayingBanjo(name) {
     }
     return name + ' does not play banjo'
 }
+
+// 18
+
+function bmi(weight, height) {
+    const bodyMassIndex = weight / (height * height);
+
+    switch (true) {
+        case (bodyMassIndex <= 18.5):
+            return "Underweight";
+        case (bodyMassIndex <= 25.0):
+            return "Normal";
+        case (bodyMassIndex <= 30.0):
+            return "Overweight";
+        default:
+            return "Obese";
+    }
+}
+
+console.log(bmi(20, 1.80));
