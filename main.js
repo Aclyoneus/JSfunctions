@@ -217,3 +217,20 @@ function rockPaperScissors (player1, player2) {
 console.log(rockPaperScissors('rock', 'scissors'));
 console.log(rockPaperScissors('rock', 'paper'));
 console.log(rockPaperScissors('paper','paper'));
+
+// 20
+
+function getCalculationResult(calculationType, firstNumber, secondNumber) {
+    if (calculationType === '+') {
+        return firstNumber + secondNumber;
+    } else if (calculationType === '-') {
+        return firstNumber - secondNumber;
+    } else if (calculationType === '*') {
+        return firstNumber * secondNumber;
+    } else if (calculationType === '/') {
+        return firstNumber / secondNumber;
+    }
+    return null;
+}
+
+console.log(getCalculationResult("&", 5, 10));
