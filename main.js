@@ -199,3 +199,21 @@ function bmi(weight, height) {
 }
 
 console.log(bmi(20, 1.80));
+
+// 19
+
+function rockPaperScissors (player1, player2) {
+    if (player1 === player2) {
+        return 0;
+    } else if ((player1 === "rock" && player2 === "scissors") ||
+    (player1 === "scissors" && player2 === "paper") ||
+    (player1 === "paper" && player2 === "rock"))
+    {
+        return 1;
+    }
+    return 2;
+}
+
+console.log(rockPaperScissors('rock', 'scissors'));
+console.log(rockPaperScissors('rock', 'paper'));
+console.log(rockPaperScissors('paper','paper'));
