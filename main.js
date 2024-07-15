@@ -8,6 +8,7 @@ const greeting = getGreeting('John', 'Smith');
 console.log(greeting);
 
 // 2
+
 const realName = 'Wojciech';
 
 function isThisMyName (name) {
@@ -47,8 +48,7 @@ const quarterOf = (month) => {
 // 5 - Dawne pierwsze 4
 
 function getCircleArea (radius) {
-    const circleArea = Math.PI * (radius * radius);
-    return circleArea;
+    return Math.PI * (radius * radius);
 }
 
 const radius = 5;
@@ -58,8 +58,7 @@ console.log(area);
 // 6
 
 function getCirclesAreaSum(radiusOne, radiusTwo) {
-    const circlesAreaSum = getCircleArea(radiusOne) + getCircleArea(radiusTwo);
-    return circlesAreaSum;
+    return getCircleArea(radiusOne) + getCircleArea(radiusTwo);
 }
 
 const circlesAreaSum = getCirclesAreaSum(5, 10);
@@ -68,8 +67,7 @@ console.log(circlesAreaSum);
 // 7
 
 function convertMinutesToHours (minutesAmount) {
-    const minutesToHours = minutesAmount / 60;
-    return minutesToHours;
+    return minutesAmount / 60;
 }
 
 const hours = convertMinutesToHours(75);
@@ -104,8 +102,7 @@ console.log(isDivisible(5, 1, 3));
 // 10
 
 function getBillboardPrice (billboardText, singleCharacterCost) {
-    const billboardPrice = billboardText.length * singleCharacterCost;
-    return billboardPrice;
+    return billboardText.length * singleCharacterCost;
 }
 
 console.log(getBillboardPrice('Hello world!', 10));
@@ -115,8 +112,7 @@ console.log(getBillboardPrice('To be, or not to be', 20));
 // 11
 
 function getOppositeNumber(number) {
-    const oppositeNumber = number * -1;
-    return oppositeNumber;
+    return number * -1;
 }
 
 console.log(getOppositeNumber(1));
@@ -138,8 +134,7 @@ console.log(getNegativeNumber(-3));
 // 13
 
 function removeFirstAndLastCharacter(str){
-    const removeFirstandLastChar = str.slice(1, -1);
-    return removeFirstandLastChar;
+    return str.slice(1, -1);
 }
 
 console.log(removeFirstAndLastCharacter("Amazing"));
@@ -147,15 +142,17 @@ console.log(removeFirstAndLastCharacter("Amazing"));
 // 14
 
 function getBasicOperationsResult(operation, value1, value2){
-    if (operation == '+') {
+    if (operation === '+') {
         return value1 + value2;
-    } else if (operation == '-') {
+    } else if (operation === '-') {
         return value1 - value2;
-    } else if (operation == '*') {
+    } else if (operation === '*') {
         return value1 * value2;
-    }else if (operation == '/') {
+    } else if (operation === '/') {
         return value1 / value2;
     }
 }
 
 console.log(getBasicOperationsResult("+", 5, 10));
+
+// 15
