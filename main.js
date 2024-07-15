@@ -310,3 +310,9 @@ function isLeapYear (number) {
 function getAverageOfThreeNumbers (number1, number2, number3) {
     return (number1 + number2 + number3) / 3;
 }
+
+// 32
+
+function isNumberNegative (number) {
+    return number < 0 ? true : false;
+}
