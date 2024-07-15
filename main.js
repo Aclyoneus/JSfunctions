@@ -251,3 +251,11 @@ function getGreaterNumber (firstNumber, secondNumber) {
     }
     return "Equal numbers";
 }
+
+// 23
+
+function isOddNumber (number) {
+    return number % 2 === 0 ? true : false;
+}
+
+// 24
