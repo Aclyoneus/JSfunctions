@@ -304,3 +304,9 @@ function getFahrenheitConvertedToCelcius (number) {
 function isLeapYear (number) {
     return number % 4 === 0 ? true : false;
 }
+
+// 31
+
+function getAverageOfThreeNumbers (number1, number2, number3) {
+    return (number1 + number2 + number3) / 3;
+}
