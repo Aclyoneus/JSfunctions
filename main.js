@@ -286,3 +286,9 @@ function getSmallerNumber (firstNumber, secondNumber) {
 function isNumberPositive (number) {
     return number > 0 ? true : false;
 }
+
+// 28
+
+function getCelciusConvertedToFahrenheit (number) {
+    return (number * 1.8) + 32;
+}
