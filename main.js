@@ -156,3 +156,9 @@ function getBasicOperationsResult(operation, value1, value2){
 console.log(getBasicOperationsResult("+", 5, 10));
 
 // 15
+
+function whichCentury(year) {
+    return Math.ceil(year / 100);
+}
+
+console.log(whichCentury(301));
