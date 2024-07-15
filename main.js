@@ -280,3 +280,9 @@ function getSmallerNumber (firstNumber, secondNumber) {
     }
     return "Equal numbers";
 }
+
+// 27
+
+function isNumberPositive (number) {
+    return number > 0 ? true : false;
+}
