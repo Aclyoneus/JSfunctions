@@ -263,3 +263,9 @@ function isOddNumber (number) {
 function isEvenNumber (number) {
     return number % 2 === 0 ? true : false;
 }
+
+// 25
+
+function isDivisible (dividedNumber, numberToDivideBy) {
+    return dividedNumber % numberToDivideBy === 0 ? true : false;
+}
