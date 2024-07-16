@@ -249,13 +249,19 @@ function isOddNumber (number) {
 // 24
 
 function isEvenNumber (number) {
-    return number % 2 === 0 ? true : false;
+    if (number % 2 === 0) {
+        return true
+    }
+    return false;
 }
 
 // 25
 
 function isDivisible (dividedNumber, numberToDivideBy) {
-    return dividedNumber % numberToDivideBy === 0 ? true : false;
+    if (dividedNumber % numberToDivideBy === 0) {
+        return true
+    }
+    return false;
 }
 
 // 26
