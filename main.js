@@ -222,13 +222,13 @@ console.log(getCalculationResult('&', 5, 10));
 
 // 21
 
-function getPercentageValue (baseNumber, percentage) {
+function getPercentageValue(baseNumber, percentage) {
     return (baseNumber * percentage) / 100;
 }
 
 // 22
 
-function getGreaterNumber (firstNumber, secondNumber) {
+function getGreaterNumber(firstNumber, secondNumber) {
     if (firstNumber > secondNumber) {
         return firstNumber;
     } else if (firstNumber < secondNumber) {
@@ -239,7 +239,7 @@ function getGreaterNumber (firstNumber, secondNumber) {
 
 // 23
 
-function isOddNumber (number) {
+function isOddNumber(number) {
     if (number % 2 !== 0) {
         return true
     }
@@ -248,7 +248,7 @@ function isOddNumber (number) {
 
 // 24
 
-function isEvenNumber (number) {
+function isEvenNumber(number) {
     if (number % 2 === 0) {
         return true
     }
@@ -257,7 +257,7 @@ function isEvenNumber (number) {
 
 // 25
 
-function isDivisible (dividedNumber, numberToDivideBy) {
+function isDivisible(dividedNumber, numberToDivideBy) {
     if (dividedNumber % numberToDivideBy === 0) {
         return true
     }
@@ -266,47 +266,50 @@ function isDivisible (dividedNumber, numberToDivideBy) {
 
 // 26
 
-function getSmallerNumber (firstNumber, secondNumber) {
+function getSmallerNumber(firstNumber, secondNumber) {
     if (firstNumber > secondNumber) {
         return secondNumber;
     } else if (firstNumber < secondNumber) {
         return firstNumber;
     }
-    return "Equal numbers";
+    return 'Equal numbers';
 }
 
 // 27
 
-function isNumberPositive (number) {
-    return number > 0 ? true : false;
+function isNumberPositive(number) {
+    if (number > 0) {
+        return true
+    }
+    return false;
 }
 
 // 28
 
-function getCelciusConvertedToFahrenheit (number) {
+function getCelciusConvertedToFahrenheit(celsiusDegrees) {
     return (number * 1.8) + 32;
 }
 
 // 29
 
-function getFahrenheitConvertedToCelcius (number) {
+function getFahrenheitConvertedToCelcius(fahrenheitDegrees) {
     return (number - 32) / 1,8;
 }
 
 // 30
 
-function isLeapYear (number) {
+function isLeapYear(number) {
     return number % 4 === 0 ? true : false;
 }
 
 // 31
 
-function getAverageOfThreeNumbers (number1, number2, number3) {
+function getAverageOfThreeNumbers(number1, number2, number3) {
     return (number1 + number2 + number3) / 3;
 }
 
 // 32
 
-function isNumberNegative (number) {
+function isNumberNegative(number) {
     return number < 0 ? true : false;
 }
