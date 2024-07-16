@@ -90,7 +90,7 @@ console.log(isDivisible(5, 1, 3));
 
 // 10
 
-function getBillboardPrice (billboardText, singleCharacterCost) {
+function getBillboardPrice(billboardText, singleCharacterCost) {
     return billboardText.length * singleCharacterCost;
 }
 
@@ -121,26 +121,26 @@ console.log(getNegativeNumber(-3));
 
 // 13
 
-function removeFirstAndLastCharacter(str){
-    return str.slice(1, -1);
+function removeFirstAndLastCharacter(word) {
+    return word.slice(1, -1);
 }
 
-console.log(removeFirstAndLastCharacter("Amazing"));
+console.log(removeFirstAndLastCharacter('Amazing'));
 
 // 14
 
-function getBasicOperationsResult(operation, value1, value2){
+function getBasicOperationsResult(operation, firstValue, secondValue) {
     if (operation === '+') {
-        return value1 + value2;
+        return firstValue + secondValue;
     } else if (operation === '-') {
-        return value1 - value2;
+        return firstValue - secondValue;
     } else if (operation === '*') {
-        return value1 * value2;
+        return firstValue * secondValue;
     }
-    return value1 / value2;
+    return firstValue / secondValue;
 }
 
-console.log(getBasicOperationsResult("+", 5, 10));
+console.log(getBasicOperationsResult('+', 5, 10));
 
 // 15
 
