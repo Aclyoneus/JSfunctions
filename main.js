@@ -298,18 +298,24 @@ function getFahrenheitConvertedToCelcius(fahrenheitDegrees) {
 
 // 30
 
-function isLeapYear(number) {
-    return number % 4 === 0 ? true : false;
+function isLeapYear(year) {
+    if (year % 4 === 0) {
+        return true
+    }
+    return false;
 }
 
 // 31
 
-function getAverageOfThreeNumbers(number1, number2, number3) {
-    return (number1 + number2 + number3) / 3;
+function getAverageOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
+    return (firstNumber + secondNumber + thirdNumber) / 3;
 }
 
 // 32
 
 function isNumberNegative(number) {
-    return number < 0 ? true : false;
+    if (number < 0) {
+        return true
+    }
+    return false;
 }
