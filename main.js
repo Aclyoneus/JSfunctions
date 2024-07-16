@@ -177,9 +177,11 @@ function bmi(weight, height) {
 
     if (bodyMassIndex <= 18.5) {
         return 'Underweight';
-    } else if (bodyMassIndex <= 25.0) {
+    }
+    if (bodyMassIndex <= 25.0) {
         return 'Normal';
-    } else if (bodyMassIndex <= 30.0) {
+    }
+    if (bodyMassIndex <= 30.0) {
         return 'Overweight';
     }
     return 'Obese';
@@ -192,7 +194,8 @@ console.log(bmi(20, 1.80));
 function rockPaperScissors (player1, player2) {
     if (player1 === player2) {
         return 0;
-    } else if ((player1 === 'rock' && player2 === 'scissors') ||
+    }
+    if ((player1 === 'rock' && player2 === 'scissors') ||
     (player1 === 'scissors' && player2 === 'paper') ||
     (player1 === 'paper' && player2 === 'rock'))
     {
@@ -210,11 +213,14 @@ console.log(rockPaperScissors('paper','paper'));
 function getCalculationResult(calculationType, firstNumber, secondNumber) {
     if (calculationType === '+') {
         return firstNumber + secondNumber;
-    } else if (calculationType === '-') {
+    }
+    if (calculationType === '-') {
         return firstNumber - secondNumber;
-    } else if (calculationType === '*') {
+    }
+    if (calculationType === '*') {
         return firstNumber * secondNumber;
-    } else if (calculationType === '/') {
+    }
+    if (calculationType === '/') {
         return firstNumber / secondNumber;
     }
     return null;
@@ -233,7 +239,8 @@ function getPercentageValue(baseNumber, percentage) {
 function getGreaterNumber(firstNumber, secondNumber) {
     if (firstNumber > secondNumber) {
         return firstNumber;
-    } else if (firstNumber < secondNumber) {
+    }
+    if (firstNumber < secondNumber) {
         return secondNumber;
     }
     return 'Equal numbers';
@@ -271,7 +278,8 @@ function isDivisible(dividedNumber, numberToDivideBy) {
 function getSmallerNumber(firstNumber, secondNumber) {
     if (firstNumber > secondNumber) {
         return secondNumber;
-    } else if (firstNumber < secondNumber) {
+    }
+    if (firstNumber < secondNumber) {
         return firstNumber;
     }
     return 'Equal numbers';
