@@ -144,11 +144,11 @@ console.log(getBasicOperationsResult('+', 5, 10));
 
 // 15
 
-function whichCentury(year) {
+function calculateCentury(year) {
     return Math.ceil(year / 100);
 }
 
-console.log(whichCentury(301));
+console.log(calculateCentury(301));
 
 // 16
 
