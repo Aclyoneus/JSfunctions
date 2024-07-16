@@ -108,11 +108,11 @@ console.log(getOppositeNumber(1));
 
 // 12
 
-function getNegativeNumber(num) {
-    if (num <= 0) {
-        return num;
+function getNegativeNumber(number) {
+    if (number <= 0) {
+        return number;
     }
-    return num * -1;
+    return number * -1;
 }
 
 console.log(getNegativeNumber(5));
@@ -132,9 +132,11 @@ console.log(removeFirstAndLastCharacter('Amazing'));
 function getBasicOperationsResult(operation, firstValue, secondValue) {
     if (operation === '+') {
         return firstValue + secondValue;
-    } else if (operation === '-') {
+    }
+    if (operation === '-') {
         return firstValue - secondValue;
-    } else if (operation === '*') {
+    }
+    if (operation === '*') {
         return firstValue * secondValue;
     }
     return firstValue / secondValue;
