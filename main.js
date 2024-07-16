@@ -11,12 +11,11 @@ console.log(greeting);
 
 const realName = 'Wojciech';
 
-function isThisMyName (name) {
+function isThisMyName(name) {
     if (name === realName ) {
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 console.log(isThisMyName('Adam'));
@@ -24,7 +23,7 @@ console.log(isThisMyName('Wojciech'));
 
 // 3
 
-function isThisBoolean (value) {
+function isThisBoolean(value) {
     return typeof value === 'boolean';
 }
 
@@ -34,21 +33,12 @@ console.log(isThisBoolean(true));
 // 4
 
 const quarterOf = (month) => {
-    switch (true) {
-        case (month <= 3):
-            return 1;
-        case (month <= 6):
-            return 2;
-        case (month <= 9):
-            return 3;
-        default:
-            return 4;
-    }
+    return Math.ceil(month / 3);
 }
 
-// 5 - Dawne pierwsze 4
+// 5
 
-function getCircleArea (radius) {
+function getCircleArea(radius) {
     return Math.PI * (radius * radius);
 }
 
@@ -67,8 +57,8 @@ console.log(circlesAreaSum);
 
 // 7
 
-function convertMinutesToHours (minutesAmount) {
-    return minutesAmount / 60;
+function convertMinutesToHours(minutes) {
+    return minutes / 60;
 }
 
 const hours = convertMinutesToHours(75);
