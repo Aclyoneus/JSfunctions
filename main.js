@@ -78,7 +78,7 @@ console.log(isTextUppercase('HELLO'));
 
 // 9
 
-function isDivisible(n, x, y) {
+function isDivisible(numberToDivide, numberOneToDivideBy, numberTwoToDivideBy) {
     if (n % x === 0 && n % y === 0) {
         return true;
     }
