@@ -154,15 +154,15 @@ console.log(calculateCentury(301));
 
 function isEvenOrOdd(number) {
     if (number % 2 === 0) {
-        return "Even";
+        return 'Even';
     }
-    return "Odd";
+    return 'Odd';
 }
 
 // 17
 
 function areYouPlayingBanjo(name) {
-    if (name[0] === 'R' || name[0] === 'r') {
+    if (name[0].toLowerCase() === 'r') {
         return name + ' plays banjo';
     }
     return name + ' does not play banjo'
