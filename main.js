@@ -12,7 +12,7 @@ console.log(greeting);
 const realName = 'Wojciech';
 
 function isThisMyName(name) {
-    if (name === realName ) {
+    if (name === realName) {
         return true;
     }
     return false;
@@ -32,7 +32,7 @@ console.log(isThisBoolean(true));
 
 // 4
 
-const quarterOf = (month) => {
+const quarterOf = function (month) {
     return Math.ceil(month / 3);
 }
 
