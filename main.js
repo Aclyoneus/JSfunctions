@@ -174,13 +174,13 @@ function bmi(weight, height) {
     const bodyMassIndex = weight / (height * height);
 
     if (bodyMassIndex <= 18.5) {
-        return "Underweight";
+        return 'Underweight';
     } else if (bodyMassIndex <= 25.0) {
-        return "Normal";
+        return 'Normal';
     } else if (bodyMassIndex <= 30.0) {
-        return "Overweight";
+        return 'Overweight';
     }
-    return "Obese";
+    return 'Obese';
 }
 
 console.log(bmi(20, 1.80));
@@ -190,9 +190,9 @@ console.log(bmi(20, 1.80));
 function rockPaperScissors (player1, player2) {
     if (player1 === player2) {
         return 0;
-    } else if ((player1 === "rock" && player2 === "scissors") ||
-    (player1 === "scissors" && player2 === "paper") ||
-    (player1 === "paper" && player2 === "rock"))
+    } else if ((player1 === 'rock' && player2 === 'scissors') ||
+    (player1 === 'scissors' && player2 === 'paper') ||
+    (player1 === 'paper' && player2 === 'rock'))
     {
         return 1;
     }
@@ -218,7 +218,7 @@ function getCalculationResult(calculationType, firstNumber, secondNumber) {
     return null;
 }
 
-console.log(getCalculationResult("&", 5, 10));
+console.log(getCalculationResult('&', 5, 10));
 
 // 21
 
@@ -234,13 +234,16 @@ function getGreaterNumber (firstNumber, secondNumber) {
     } else if (firstNumber < secondNumber) {
         return secondNumber;
     }
-    return "Equal numbers";
+    return 'Equal numbers';
 }
 
 // 23
 
 function isOddNumber (number) {
-    return number % 2 !== 0 ? true : false;
+    if (number % 2 !== 0) {
+        return true
+    }
+    return false;
 }
 
 // 24
