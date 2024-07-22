@@ -32,7 +32,7 @@ console.log(isThisBoolean(true));
 
 // 4
 
-const quarterOf = function (month) {
+function quarterOf (month) {
     return Math.ceil(month / 3);
 }
 
@@ -191,21 +191,42 @@ console.log(bmi(20, 1.80));
 
 // 19
 
-function rockPaperScissors (player1, player2) {
-    if (player1 === player2) {
-        return 0;
-    }
-    if ((player1 === 'rock' && player2 === 'scissors') ||
-    (player1 === 'scissors' && player2 === 'paper') ||
-    (player1 === 'paper' && player2 === 'rock'))
-    {
+function fightWithRock(opponent) {
+    if (opponent === 'scissors') {
         return 1;
     }
     return 2;
 }
 
+function fightWithPaper(opponent) {
+    if (opponent === 'scissors') {
+        return 2;
+    }
+    return 1;
+}
+
+function fightWithScissors(opponent) {
+    if (opponent === 'rock') {
+        return 2;
+    }
+    return 1;
+}
+
+function rockPaperScissors(player1, player2) {
+    if (player1 === player2) {
+        return 0;
+    }
+    if (player1 === 'rock') {
+        return fightWithRock(player2);
+    }
+    if (player1 === 'paper') {
+        return fightWithPaper(player2);
+    }
+    return fightWithScissors(player2);
+}
+
 console.log(rockPaperScissors('rock', 'scissors'));
-console.log(rockPaperScissors('rock', 'paper'));
+console.log(rockPaperScissors('scissors', 'rock'));
 console.log(rockPaperScissors('paper','paper'));
 
 // 20
